@@ -1,11 +1,11 @@
-About napari-omaas
-==================
+About napari-omaas-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-omaas-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rjlopez2/napari-omaas
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-omaas-feedstock/blob/main/LICENSE.txt)
 
 Summary: napari-OMAAS stands for Optical Mapping Acquisition and Analysis Software
 
