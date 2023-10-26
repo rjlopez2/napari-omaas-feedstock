@@ -1,5 +1,5 @@
 {% set name = "napari-omaas" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-omaas-{{ version }}.tar.gz
-  sha256: 257ad21a0c2aca91011131be8422ec2cb9de5e73c77409883e87c1a37c440fba
+  sha256: 92432eb8e2364f3379e09706e3217b2ffa3cb8b80b62bbf5a4291a6eb8dbb127
 
 build:
   noarch: python
