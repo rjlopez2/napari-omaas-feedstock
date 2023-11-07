@@ -1,0 +1,13 @@
+diff --git a/src/napari_omaas/_widget.py b/src/napari_omaas/_widget.py
+index 1bccdee..854e0de 100644
+--- a/src/napari_omaas/_widget.py
++++ b/src/napari_omaas/_widget.py
+@@ -18,7 +18,7 @@ from qtpy.QtWidgets import (
+ from qtpy import QtWidgets
+ from warnings import warn
+ from qtpy.QtCore import Qt, QAbstractTableModel, QModelIndex
+-from PyQt5.QtGui import QIntValidator
++from qtpy.QtGui import QIntValidator
+ from numpy import ndarray as numpy_ndarray
+ import pyqtgraph as pg
+ # from napari_time_series_plotter import TSPExplorer
