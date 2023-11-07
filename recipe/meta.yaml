@@ -1,5 +1,5 @@
 {% set name = "napari-omaas" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,9 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-omaas-{{ version }}.tar.gz
-  sha256: 257ad21a0c2aca91011131be8422ec2cb9de5e73c77409883e87c1a37c440fba
+  sha256: 92432eb8e2364f3379e09706e3217b2ffa3cb8b80b62bbf5a4291a6eb8dbb127
+  patches:
+    - qtpy.patch
 
 build:
   noarch: python
@@ -20,10 +22,20 @@ requirements:
     - python >=3.8
   run:
     - magicgui
+    - matplotlib-base   # Imported but not listed as requirement
     - napari
+    - napari-macrokit
+    - napari-mat-file-reader
+    - napari-matplotlib
+    - napari-sif-reader
     - numpy
+    - pandas  # Imported but not listed as requirement
+    - pyqtgraph
     - python >=3.8
     - qtpy
+    - requests  # Imported but not listed as requirement
+    - scikit-image  # Imported but not listed as requirement
+    - scipy  # Imported but not listed as requirement
     - sif-parser
 
 test:
@@ -34,12 +46,14 @@ test:
     - pip check
   requires:
     - pip
+    - pyqt
 
 about:
-  home: https://github.com/rjlopez2/napari-omaas
+  home: https://pypi.org/project/napari-omaas
   summary: napari-OMAAS stands for Optical Mapping Acquisition and Analysis Software
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/rjlopez2/napari-omaas
 
 extra:
   recipe-maintainers:
